@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CleanRide | مكنسة السيارة اللاسلكية</title>
+<meta name="description" content="مكنسة لاسلكية صغيرة للسيارة والبيت، شفط ونفخ، شحن USB. توصيل مجاني لكل الإمارات.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#14171c;--muted:#5d6673;--accent:#0f62fe;--accent-ink:#fff;--ok:#0a8f5a;--line:#e3e6eb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,system-ui,sans-serif;line-height:1.7}
+img{max-width:100%;display:block}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+header{background:var(--ink);color:#fff;text-align:center;padding:8px 16px;font-size:14px}
+.brand{font-weight:800;font-size:20px;text-align:center;padding:14px 0 6px}
+.hero img{border-radius:16px;background:#fff}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding:10px 0}
+.thumbs img{width:68px;height:68px;object-fit:cover;border-radius:10px;border:2px solid transparent;cursor:pointer;flex:none;background:#fff}
+.thumbs img.on{border-color:var(--accent)}
+h1{font-size:24px;line-height:1.4;margin:10px 0 4px}
+.sub{color:var(--muted);margin:0 0 14px}
+.offers{display:grid;gap:10px;margin:14px 0}
+.offer{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px 14px;text-decoration:none;color:inherit}
+.offer.best{border-color:var(--accent)}
+.offer b{font-size:18px}
+.tag{background:var(--accent);color:#fff;font-size:12px;border-radius:999px;padding:2px 10px;margin-inline-start:6px}
+.price{font-weight:800;font-size:22px;white-space:nowrap}
+.price small{display:block;font-size:12px;color:var(--muted);font-weight:400;text-align:left}
+.btn{display:block;text-align:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;font-size:18px;border-radius:14px;padding:14px}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0;font-size:14px}
+.trust div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0}
+section h2{font-size:19px;margin:0 0 8px}
+ul{padding-inline-start:20px;margin:0}
+li{margin:4px 0}
+.img-full{border-radius:12px;margin:10px 0}
+details{border-top:1px solid var(--line);padding:10px 0}
+details:first-of-type{border-top:0}
+summary{font-weight:600;cursor:pointer}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:20px 16px 110px}
+footer a{color:var(--muted)}
+.sticky{position:fixed;inset-inline:0;bottom:0;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px 16px}
+.sticky .btn{max-width:528px;margin:0 auto}
+</style>
+</head>
+<body>
+<header>🚚 توصيل مجاني لكل الإمارات · الدفع بالبطاقة أو Apple Pay</header>
+<div class="wrap">
+  <div class="brand">CleanRide</div>
+
+  <div class="hero"><img id="main" src="img/1.jpg" alt="مكنسة السيارة اللاسلكية مع الملحقات"></div>
+  <div class="thumbs" id="thumbs"></div>
+
+  <h1>مكنسة السيارة اللاسلكية: نظّف الرمل والفتات بدقيقة</h1>
+  <p class="sub">صغيرة بتنحط بالتابلوه، بتشفط وبتنفخ، وبتنشحن USB. للسيارة والبيت والمكتب.</p>
+
+  <div class="offers">
+    <a class="offer" id="buy1" href="#">
+      <span><b>قطعة وحدة</b></span>
+      <span class="price">129 درهم</span>
+    </a>
+    <a class="offer best" id="buy2" href="#">
+      <span><b>قطعتين</b><span class="tag">الأوفر</span><br><small>وحدة إلك ووحدة هدية أو للبيت</small></span>
+      <span class="price">199 درهم<small>99.5 للقطعة</small></span>
+    </a>
+  </div>
+
+  <div class="trust">
+    <div>🚚 توصيل مجاني</div>
+    <div>📦 7-15 يوم توصيل</div>
+    <div>🔒 دفع آمن عبر Stripe</div>
+    <div>↩️ استبدال إذا وصلت معطوبة</div>
+  </div>
+
+  <section>
+    <h2>ليش رح تحبها</h2>
+    <ul>
+      <li><b>لاسلكية:</b> بدون شريط ولا فيش، بتشتغل بكبسة.</li>
+      <li><b>شفط ونفخ:</b> بتشفط الرمل والفتات، وبتنفخ الغبرة من الزوايا والفتحات.</li>
+      <li><b>شحن USB:</b> من شاحن الموبايل أو شاحن السيارة أو اللابتوب.</li>
+      <li><b>فلتر بينغسل:</b> بتفضّي العلبة وبتغسل الفلتر وبترجع تستعملها.</li>
+      <li><b>3 رؤوس:</b> فرشاية، ورأس رفيع للزوايا، ورأس للنفخ.</li>
+    </ul>
+    <img class="img-full" src="img/2.jpg" alt="استعمال المكنسة داخل السيارة" loading="lazy">
+  </section>
+
+  <section>
+    <h2>وين بتستعملها</h2>
+    <img class="img-full" src="img/8.jpg" alt="استعمال على الكنباية والسيارة والكيبورد والرفوف" loading="lazy">
+    <p>كراسي السيارة والأرضية، الكنباية، الكيبورد، الرفوف، وحتى سرير الأطفال.</p>
+  </section>
+
+  <section>
+    <h2>شو بيوصلك بالعلبة</h2>
+    <ul>
+      <li>مكنسة لاسلكية</li>
+      <li>فرشاية، ورأس رفيع، ورأس نفخ</li>
+      <li>كابل شحن USB</li>
+    </ul>
+    <img class="img-full" src="img/6.jpg" alt="علبة الغبرة والفلتر بينفكوا" loading="lazy">
+  </section>
+
+  <a class="btn" href="#" id="buy-mid">اطلبها الآن</a>
+
+  <section>
+    <h2>أسئلة متكررة</h2>
+    <details><summary>قديش بياخد التوصيل؟</summary><p>من 7 لـ15 يوم عمل لكل الإمارات، والتوصيل مجاني. بيوصلك رقم تتبع على الإيميل.</p></details>
+    <details><summary>كيف بدفع؟</summary><p>أونلاين بالبطاقة أو Apple Pay أو Google Pay، عن طريق صفحة دفع Stripe الآمنة. ما في دفع عند الاستلام.</p></details>
+    <details><summary>إذا وصلت معطوبة أو ما اشتغلت؟</summary><p>راسلنا خلال 14 يوم من الاستلام مع صورة أو فيديو، ومنبعتلك بديل أو منرجّعلك المبلغ.</p></details>
+    <details><summary>قديش بتطوّل البطارية؟</summary><p>مناسبة لتنظيف سريع للسيارة أو الكنباية. بعدها بتشحنها USB متل الموبايل.</p></details>
+  </section>
+</div>
+
+<footer>
+  CleanRide هو متجر تابع لـ Framora Visuals Media FZ-LLC، رأس الخيمة، الإمارات.<br>
+  للتواصل: <a href="mailto:hello@framora360.com">hello@framora360.com</a><br>
+  <a href="policies.html">الشحن والإرجاع والخصوصية</a>
+</footer>
+
+<div class="sticky"><a class="btn" href="#" id="buy-sticky">اطلبها الآن · من 129 درهم</a></div>
+
+<script>
+// Stripe Payment Links, filled in after they are created
+var LINK_1 = "https://buy.stripe.com/7sY4gzeUygME3ns26U5ZC05";
+var LINK_2 = "https://buy.stripe.com/28E3cv27M9kc4rw4f25ZC06";
+document.getElementById("buy1").href = LINK_1;
+document.getElementById("buy2").href = LINK_2;
+["buy-mid","buy-sticky"].forEach(function(id){
+  document.getElementById(id).addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(".offers").scrollIntoView({behavior:"smooth", block:"center"});
+  });
+});
+var t = document.getElementById("thumbs"), m = document.getElementById("main");
+for (var i = 1; i <= 8; i++) {
+  var im = document.createElement("img");
+  im.src = "img/" + i + ".jpg"; im.alt = "صورة " + i; if (i === 1) im.className = "on";
+  im.onclick = function(){ m.src = this.src; [].forEach.call(t.children, function(c){ c.className = ""; }); this.className = "on"; };
+  t.appendChild(im);
+}
+</script>
+</body>
+</html>
