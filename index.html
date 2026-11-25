@@ -127,12 +127,24 @@ fbq('init','2157094265180747');fbq('track','PageView');fbq('track','ViewContent'
 
 <script>
 // Stripe Payment Links, filled in after they are created
-var LINK_1 = "https://buy.stripe.com/7sY4gzeUygME3ns26U5ZC05";
-var LINK_2 = "https://buy.stripe.com/28E3cv27M9kc4rw4f25ZC06";
-document.getElementById("buy1").href = LINK_1;
+// Empty = ordering not open yet (CleanRide Stripe account under review)
+var LINK_1 = "";
+var LINK_2 = "";
+if (!LINK_1 || !LINK_2) {
+  ["buy1","buy2"].forEach(function(id){
+    var a = document.getElementById(id);
+    a.removeAttribute("href"); a.style.opacity = ".6"; a.style.cursor = "default";
+  });
+  document.getElementById("buy-sticky").textContent = "الطلب يفتح قريباً";
+  var note = document.createElement("p");
+  note.style.cssText = "text-align:center;font-weight:600;margin:4px 0 0";
+  note.textContent = "الطلب يفتح قريباً جداً";
+  document.querySelector(".offers").after(note);
+}
+if (LINK_1) document.getElementById("buy1").href = LINK_1;
 document.getElementById("buy1").addEventListener("click",function(){try{fbq("track","InitiateCheckout",{value:129,currency:"AED",num_items:1})}catch(e){}});
 document.getElementById("buy2").addEventListener("click",function(){try{fbq("track","InitiateCheckout",{value:199,currency:"AED",num_items:2})}catch(e){}});
-document.getElementById("buy2").href = LINK_2;
+if (LINK_2) document.getElementById("buy2").href = LINK_2;
 ["buy-mid","buy-sticky"].forEach(function(id){
   document.getElementById(id).addEventListener("click", function(e){
     e.preventDefault();
