@@ -44,6 +44,10 @@ footer a{color:var(--muted)}
 .sticky{position:fixed;inset-inline:0;bottom:0;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px 16px}
 .sticky .btn{max-width:528px;margin:0 auto}
 </style>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2157094265180747');fbq('track','PageView');fbq('track','ViewContent',{content_name:'CleanRide car vacuum',value:129,currency:'AED'});
+</script>
 </head>
 <body>
 <header>🚚 توصيل مجاني لكل الإمارات · الدفع بالبطاقة أو Apple Pay</header>
@@ -126,6 +130,8 @@ footer a{color:var(--muted)}
 var LINK_1 = "https://buy.stripe.com/7sY4gzeUygME3ns26U5ZC05";
 var LINK_2 = "https://buy.stripe.com/28E3cv27M9kc4rw4f25ZC06";
 document.getElementById("buy1").href = LINK_1;
+document.getElementById("buy1").addEventListener("click",function(){try{fbq("track","InitiateCheckout",{value:129,currency:"AED",num_items:1})}catch(e){}});
+document.getElementById("buy2").addEventListener("click",function(){try{fbq("track","InitiateCheckout",{value:199,currency:"AED",num_items:2})}catch(e){}});
 document.getElementById("buy2").href = LINK_2;
 ["buy-mid","buy-sticky"].forEach(function(id){
   document.getElementById(id).addEventListener("click", function(e){
